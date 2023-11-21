@@ -14,30 +14,100 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="bg-green-400 h-screen min-h-[600px] w-full">
-      <nav
-        class="py-6 grid justify-items-center items-center gap-4 wrapper"
-      >
-        <a href="#" class="text-3xl text-white font-bold">TENISLANDIA</a>
-        <div class="space-x-4 text-blue-500 font-semibold">
+    <header class="bg-green-400 min-h-[600px] w-full">
+      <nav class="py-6 grid justify-items-center items-center gap-4 wrapper">
+        <a href="#" class="text-3xl font-bold text-[#6c63ff]">TENISLANDIA</a>
+        <div class="space-x-4 text-black/80 font-semibold">
           <a href="">Inicio</a>
           <a href="#">Entrenadores</a>
           <a href="#">Precios</a>
         </div>
       </nav>
-      <section class="wrapper">
-        <img src="./assets//tenis.svg" />
-        <div>
-          <h1>Club de Tenis Profesional</h1>
-          <p>
+      <section class="wrapper py-10 flex flex-col gap-6 items-center mb-6">
+        <img src="./assets//tenis.svg" class="max-w-md" />
+        <div class="space-y-8 text-center">
+          <h1 class="text-4xl font-bold text-center text-black/75">
+            Club de Tenis Profesional
+          </h1>
+          <p class="text-[1.1rem]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nisi
             minus magni quia saepe quae commodi, totam non veritatis architecto
             est dignissimos quam numquam debitis excepturi animi! Veritatis,
             vero maxime?
           </p>
-          <a href="#">Inscríbete</a>
+          <a
+            href="#"
+            class="inline-block py-4 px-8 rounded-xl font-bold bg-white text-[#6c63ff] hover:scale-105 transition-transform border-2 border-[#6c63ff]"
+            >Inscríbete</a
+          >
         </div>
       </section>
     </header>
+    <section class="wrapper text-center py-10">
+      <h2 class="text-3xl font-bold text-black/70">NUESTROS SERVICIOS</h2>
+      <div class="grid gap-8 max-w-md mx-auto">
+        <article class="space-y-6 mt-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-green-400 w-20 mx-auto"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 5v14h3v-6h6v6h3V5h-3v6H9V5zM3 15a1 1 0 0 0 1 1h1V8H4a1 1 0 0 0-1 1v2H2v2h1v2zm18-6a1 1 0 0 0-1-1h-1v8h1a1 1 0 0 0 1-1v-2h1v-2h-1V9z"
+            ></path>
+          </svg>
+          <h3 class="text-2xl">Entrenamiento Físico</h3>
+          <p class="text-[1.05rem] text-black/75">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+            aliquid corporis, omnis quibusdam, totam molestias vero numquam
+            laudantium enim sunt.
+          </p>
+        </article>
+        <article class="space-y-6 mt-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-green-400 w-20 mx-auto"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 5v14h3v-6h6v6h3V5h-3v6H9V5zM3 15a1 1 0 0 0 1 1h1V8H4a1 1 0 0 0-1 1v2H2v2h1v2zm18-6a1 1 0 0 0-1-1h-1v8h1a1 1 0 0 0 1-1v-2h1v-2h-1V9z"
+            ></path>
+          </svg>
+          <h3 class="text-2xl">Entrenamiento Físico</h3>
+          <p class="text-[1.05rem] text-black/75">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+            aliquid corporis, omnis quibusdam, totam molestias vero numquam
+            laudantium enim sunt.
+          </p>
+        </article>
+        <article class="space-y-6 mt-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-green-400 w-20 mx-auto"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 5v14h3v-6h6v6h3V5h-3v6H9V5zM3 15a1 1 0 0 0 1 1h1V8H4a1 1 0 0 0-1 1v2H2v2h1v2zm18-6a1 1 0 0 0-1-1h-1v8h1a1 1 0 0 0 1-1v-2h1v-2h-1V9z"
+            ></path>
+          </svg>
+          <h3 class="text-2xl">Entrenamiento Físico</h3>
+          <p class="text-[1.05rem] text-black/75">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+            aliquid corporis, omnis quibusdam, totam molestias vero numquam
+            laudantium enim sunt.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class=" bg-slate-100 py-10 ">
+      <div class=" wrapper text-center">
+       
+     <form class="max-w-md grid gap-6 mx-auto">
+      <h2 class="text-3xl font-bold text-black/70">Danos tu correo y te contactaremos</h2>
+          <input type="text" placeholder="example@email.com" class="p-2 border-2 border-slate-500 rounded-md">
+          <input type="submit" class="bg-green-400 p-2 rounded-md text-lg " value="Enviar!">
+        </form>
+      </div>
+    </section>
   </body>
 </html>
