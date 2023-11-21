@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,18 +14,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="bg-green-400 min-h-[600px] w-full">
-      <nav class="py-6 grid justify-items-center items-center gap-4 wrapper">
-        <a href="#" class="text-3xl font-bold text-[#6c63ff]">TENISLANDIA</a>
+    <header class="bg-green-400 w-full">
+      <nav class="py-6 grid justify-items-center items-center gap-4 wrapper md:grid-flow-col md:justify-between">
+        <a href="#" class="text-3xl font-bold text-[#6c63ff]">TENISLANDIA.</a>
         <div class="space-x-4 text-black/80 font-semibold">
           <a href="">Inicio</a>
-          <a href="#">Entrenadores</a>
-          <a href="#">Precios</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
         </div>
       </nav>
-      <section class="wrapper py-10 flex flex-col gap-6 items-center mb-6">
-        <img src="./assets//tenis.svg" class="max-w-md" />
-        <div class="space-y-8 text-center">
+      <section class="wrapper py-10 flex flex-col gap-6 items-center mb-6 md:flex-row-reverse min-h-[600px] ">
+        <img src="./assets//tenis.svg" class="max-w-md md:w-1/2" />
+        <div class="space-y-8 text-center md:w-1/2 ">
           <h1 class="text-4xl font-bold text-center text-black/75">
             Club de Tenis Profesional
           </h1>
@@ -43,9 +43,9 @@
         </div>
       </section>
     </header>
-    <section class="wrapper text-center py-10">
+    <section class="wrapper text-center py-10 lg:py-20" id="servicios">
       <h2 class="text-3xl font-bold text-black/70">NUESTROS SERVICIOS</h2>
-      <div class="grid gap-8 max-w-md mx-auto">
+      <div class="grid gap-8 max-w-md mx-auto lg:grid-flow-col lg:max-w-none auto-cols-fr">
         <article class="space-y-6 mt-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@
         </article>
       </div>
     </section>
-    <section class=" bg-slate-100 py-10 ">
+    <section class=" bg-slate-100 py-20 " id="contacto">
       <div class=" wrapper text-center">
        
      <form class="max-w-md grid gap-6 mx-auto">
