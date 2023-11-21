@@ -5,3 +5,9 @@
 .wrapper{
     @apply mx-auto max-w-screen-xl overflow-hidden w-[90%];
 }
+
+@layer components{
+    .input {
+        @apply border-b border-b-black outline-none font-light p-2;
+    }
+}
