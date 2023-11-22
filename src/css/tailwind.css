@@ -10,6 +10,18 @@
     .input {
         @apply border-b border-b-black outline-none font-light p-2;
     }
+
+    .icon-container{
+      @apply p-4 bg-card-color aspect-square rounded-full w-max;
+  }
+}
+
+
+
+@layer base{
+    h1,h2,h3,h4,h5,h6{
+        @apply font-bold
+    }
 }
 
 @layer utilities{

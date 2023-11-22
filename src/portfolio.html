@@ -1,38 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body class="bg-color-back text-white">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-color-back text-white font-dmSans">
     <div class="w-[90%] max-w-screen-xl mx-auto overflow-hidden">
-        <head>
-            <nav class="flex h-20 items-center justify-between">
-                <a href="./">
-                    <svg xmlns="http://www.w3.org/2000/svg"  height="45" viewBox="0 0 24 24" class="fill-white"><path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path></svg>
-                </a>
-                <input type="checkbox" id="menu" class="peer/menu hidden">
-                <label for="menu" class="w-10 h-10 bg-menu bg-center bg-cover cursor-pointer bg-green-color rounded-lg peer-checked/menu:bg-close transition-all z-40"></label>
-                <ul class="fixed inset-0 bg-menu-color grid auto-rows-max content-center  justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full">
-                    <li>
-                        <a href="#">About me</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contatc me</a>
-                    </li>
-                </ul>
-            </nav>
-        </head>
+      <head>
+        <nav class="flex h-20 items-center justify-between">
+          <a href="./">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="45"
+              viewBox="0 0 24 24"
+              class="fill-white"
+            >
+              <path
+                d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"
+              ></path>
+            </svg>
+          </a>
+          <input type="checkbox" id="menu" class="peer/menu hidden" />
+          <label
+            for="menu"
+            class="w-10 h-10 bg-menu bg-center bg-cover cursor-pointer bg-green-color rounded-lg peer-checked/menu:bg-close transition-all z-40 md:hidden"
+          ></label>
+          <ul
+            class="fixed inset-0 bg-menu-color grid auto-rows-max content-center gap-5 justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:relative md:grid-flow-col md:bg-transparent md:clip-circle-full"
+          >
+            <li>
+              <a href="#">About me</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Conta me</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="mt-8 md:flex justify-between items-center gap-7">
+          <figure class="order-1">
+            <img
+              src="./assets/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg"
+              class="w-[90%] aspect-square rounded-full object-cover max-w-sm mx-auto"
+            />
+          </figure>
+          <article class="text-center md:text-left mt-8">
+            <h1 class="text-4xl md:text-5xl">Hi, I am Manuelito Perez</h1>
+            <p class="text-gray-color mt-3 text-xl mb-6">Fronted Developer</p>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(170px,1fr))] auto-rows-[60px] gap-8 max-w-lg mx-auto"
+            >
+              <a
+                href="#"
+                class="bg-green-color flex justify-center items-center"
+                >Download CV</a
+              >
+              <a href="#" class="flex justify-center items-center border"
+                >Learn More</a
+              >
+            </div>
+          </article>
+        </section>
+      </head>
+      <main>
+        <!-- sección de contacto -->
+        <section class="py-16 text-center">
+          <h2 class="text-4xl md:text-5xl">About</h2>
+          <p
+            class="mt-8 mb-16 font-light text-gray-color max-w-screen-md mx-auto"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            neque iure eligendi voluptatum, repudiandae quo error dolores
+            tenetur expedita nostrum similique fugiat.
+          </p>
+          <div class="grid justify-items-center gap-16 md:grid-flow-col">
+            <div class="w-max grid justify-items-center">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 fill-green-color"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"
+                  ></path>
+                </svg>
+              </div>
+              <article>
+                <h3 class="text-xl mt-2">Email</h3>
+                <p class="font-light">manuelito90@gmail.com</p>
+              </article>
+            </div>
+            <div class="w-max grid justify-items-center">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-10 fill-green-color"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                  ></path>
+                </svg>
+              </div>
+              <article>
+                <h3 class="text-xl mt-2">GitHub</h3>
+                <p class="font-light">manuelitoDev</p>
+              </article>
+            </div>
+            <div class="w-max grid justify-items-center">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-10 fill-green-color"
+                >
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                  ></path>
+                </svg>
+              </div>
+              <article>
+                <h3 class="text-xl mt-2">Twitter</h3>
+                <p class="font-light">@ManuelitoDev</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- sección de tecnologías-->
+      </main>
     </div>
-</body>
+  </body>
 </html>
