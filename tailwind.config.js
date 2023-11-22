@@ -4,10 +4,19 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-           novak: "url('https://fotografias.lasexta.com/clipping/cmsimages01/2023/11/20/F302A6DD-D5D1-4973-8642-57CDFC3D6DF8/novak-djokovic_98.jpg?crop=3000,1688,x0,y0&width=1900&height=1069&optimize=low&format=webply')"
+          menu: "url('../assets/bx-menu-alt-right.svg')",
+          close: "url('../assets/bx-x.svg')"
       },
       fontFamily:{
-        poppins: 'Poppins'
+        poppins: 'Poppins',
+        dmSans: 'DM Sans'
+      },
+      colors:{
+        "green-color": "#27AE60",
+         "gray-color": "#828282",
+         "card-color": "#212121",
+         "color-back": "#171717",
+          "menu-color": "#172554"
       }
     },
   },

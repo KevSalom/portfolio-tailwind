@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-color-back text-white">
+    <div class="w-[90%] max-w-screen-xl mx-auto overflow-hidden">
+        <head>
+            <nav class="flex h-20 items-center justify-between">
+                <a href="./">
+                    <svg xmlns="http://www.w3.org/2000/svg"  height="45" viewBox="0 0 24 24" class="fill-white"><path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path></svg>
+                </a>
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+                <label for="menu" class="w-10 h-10 bg-menu bg-center bg-cover cursor-pointer bg-green-color rounded-lg peer-checked/menu:bg-close transition-all z-40"></label>
+                <ul class="fixed inset-0 bg-menu-color grid auto-rows-max content-center  justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full">
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contatc me</a>
+                    </li>
+                </ul>
+            </nav>
+        </head>
+    </div>
+</body>
+</html>
