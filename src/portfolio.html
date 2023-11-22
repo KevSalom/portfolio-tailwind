@@ -224,7 +224,7 @@
          <!-- Sección de Habilidades-->
         <section class="py-16 text-center ">
           <h2 class="text-4xl md:text-5xl  mb-16">My Skills</h2>
-          <div class="grid gap-8 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
+          <div class="bg-card-color px-6 p-12 grid gap-8 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
             <article class="text-center space-y-2">
                 <p class="text-5xl font-bold">80%</p>
                 <h3 class="text-green-color text-2xl">HTML</h3>
@@ -242,6 +242,18 @@
                 <h3 class="text-green-color text-2xl">TypeScript</h3>
             </article>
           </div>
+        </section>
+        <section class="py-16 max-w-screen-lg mx-auto">
+          <h2 class="text-4xl md:text-5xl text-center mb-16">Get in touch:</h2>
+          <form class="w-full">
+            <div class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] ">
+            <input type="text" placeholder="Name" class="bg-transparent text-gray-color font-light p-3 border-b border-gray-color focus-input">
+            <input type="email" placeholder="Email" class="bg-transparent text-gray-color font-light p-3 border-b border-gray-color focus-input">
+          </div>
+          <textarea  rows="4" placeholder="Message" class="w-full mt-8 bg-transparent text-gray-color font-light border border-gray-color min-h-[150px] max-h-[300px] focus:outline-none p-3 focus-input" ></textarea>
+
+          <button class="block bg-green-color py-4 px-12 mt-6 mx-auto">Submit</button>
+         
         </section>
       </main>
     </div>
