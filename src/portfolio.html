@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <!-- Sección de metadatos y configuración de la página -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio | Tailwind </title>
+   
 
     <!-- Enlaces a estilos y fuentes externas -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/code-alt-regular-24 (2).png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,14 +48,18 @@
             class="fixed inset-0 bg-menu-color grid auto-rows-max content-center gap-5 justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:relative md:grid-flow-col md:bg-transparent md:clip-circle-full"
           >
             <li>
-              <a href="#">About me</a>
+              <a href="#about" onclick="document.getElementById('menu').checked = false;">About me</a>
             </li>
             <li>
-              <a href="#">Tech</a>
+              <a href="#tech" onclick="document.getElementById('menu').checked = false;">Tech</a>
             </li>
             <li>
-              <a href="#">Contact me</a>
+              <a href="#skills" onclick="document.getElementById('menu').checked = false;">Skills</a>
             </li>
+            <li>
+              <a href="#contact" onclick="document.getElementById('menu').checked = false;">Contact me</a>
+            </li>
+           
           </ul>
         </nav>
         <!-- Sección principal del contenido -->
@@ -67,7 +73,7 @@
           </figure>
           <article class="text-center md:text-left mt-8">
             <h1 class="text-4xl md:text-5xl">Hi, I am Manuelito Perez</h1>
-            <p class="text-gray-color mt-3 text-xl mb-6">Fronted Developer</p>
+            <p class="text-gray-color mt-3 text-xl mb-6">Full Stack Developer</p>
             <div
               class="grid grid-cols-[repeat(auto-fit,minmax(170px,1fr))] auto-rows-[60px] gap-8 max-w-lg mx-auto"
             >
@@ -86,8 +92,8 @@
 
       <main>
         <!-- Sección de contacto -->
-        <section class="py-16 text-center">
-          <h2 class="text-4xl md:text-5xl">About</h2>
+        <section class="py-16 text-center" id="about">
+          <h2 class="text-4xl md:text-5xl" >About</h2>
           <p
             class="mt-8 mb-16 font-light text-gray-color max-w-screen-md mx-auto"
           >
@@ -95,7 +101,7 @@
             neque iure eligendi voluptatum, repudiandae quo error dolores
             tenetur expedita nostrum similique fugiat.
           </p>
-          <div class="grid justify-items-center gap-16 md:grid-flow-col">
+          <div class="grid justify-items-center gap-16 mx-auto grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
             <!-- Información de correo electrónico -->
             <div class="w-max grid justify-items-center">
               <div class="icon-container">
@@ -155,7 +161,7 @@
           </div>
         </section>
         <!-- Sección de tecnologías-->
-        <section class="py-16 ">
+        <section class="py-16 " id="tech">
           <h2 class="text-4xl md:text-5xl mb-16 text-center">My Tech Stack</h2>
           <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8">
             <!-- React.js -->
@@ -222,7 +228,7 @@
           </div>
         </section>
          <!-- Sección de Habilidades-->
-        <section class="py-16 text-center ">
+        <section class="py-16 text-center " id="skills">
           <h2 class="text-4xl md:text-5xl  mb-16">My Skills</h2>
           <div class="bg-card-color px-6 p-12 grid gap-8 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
             <article class="text-center space-y-2">
@@ -242,8 +248,9 @@
                 <h3 class="text-green-color text-2xl">TypeScript</h3>
             </article>
           </div>
+          <!-- Formulario de contacto-->
         </section>
-        <section class="py-16 max-w-screen-lg mx-auto">
+        <section class="py-16 max-w-screen-lg mx-auto" id="contact">
           <h2 class="text-4xl md:text-5xl text-center mb-16">Get in touch:</h2>
           <form class="w-full">
             <div class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] ">

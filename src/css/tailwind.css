@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.wrapper{
-    @apply mx-auto max-w-screen-xl overflow-hidden w-[90%];
-}
-
 @layer components{
-    .input {
-        @apply border-b border-b-black outline-none font-light p-2;
-    }
 
-    .icon-container{
+  .icon-container{
       @apply p-4 bg-card-color aspect-square rounded-full w-max;
   }
 
@@ -20,8 +13,6 @@
   }
   
 }
-
-
 
 @layer base{
     h1,h2,h3,h4,h5,h6{
